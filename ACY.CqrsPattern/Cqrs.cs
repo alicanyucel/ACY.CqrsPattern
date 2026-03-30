@@ -1,4 +1,7 @@
-﻿namespace ACY.CqrsLibrary;
+﻿using System;
+using System.Threading.Tasks;
+
+namespace ACY.CqrsLibrary;
 
 // Marker interfaces
 public interface ICommand { }

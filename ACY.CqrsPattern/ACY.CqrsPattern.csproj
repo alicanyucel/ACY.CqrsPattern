@@ -1,9 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <!-- Paket bilgileri -->
     <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <AssemblyName>ACY.CqrsPattern</AssemblyName>
+    <RootNamespace>ACY.CqrsPattern</RootNamespace>
+    <PackageId>ACY.CqrsPattern</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ali Can Yücel</Authors>
+    <Company>ACY</Company>
+    <Description>Minimal CQRS pattern library with Command, Query, and Dispatcher support.</Description>
+    <PackageTags>CQRS;Command;Query;Dispatcher;Architecture</PackageTags>
+    <RepositoryUrl>https://github.com/alicanyucel/ACY.CqrsPattern</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/alicanyucel/ACY.CqrsPattern</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Gerekirse DI için -->
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
 
 </Project>
